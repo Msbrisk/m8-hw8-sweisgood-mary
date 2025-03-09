@@ -217,5 +217,6 @@ footer {
   text-transform: uppercase;
   padding: 24px 0;
   color: var(--off-white);
+  
   animation: footerFadeIn 2s ease-out forwards;
 }
