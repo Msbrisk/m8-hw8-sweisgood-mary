@@ -93,7 +93,6 @@ header a {
 
 header a:hover {
   color: var(--secondary-color); 
-  transform: scale(1.1);
   animation: headerLinkHover 0.5s ease-in-out forwards;
 }
 
@@ -125,6 +124,7 @@ main a::after {
 }
 
 main a:hover::after {
+  width: 100%;
   transform: scaleX(1);
   transform-origin: bottom left;
   animation: linkUnderline 0.3s ease forwards;
