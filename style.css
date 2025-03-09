@@ -118,7 +118,7 @@ main a:hover {
   color: var(--secondary-color); 
 }
 
-a::after {
+main a::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -129,9 +129,10 @@ a::after {
   transform: scaleX(1);
   transform-origin: bottom right;
   transition: transform 0.3s ease;
+  animation: linkUnderline 0.3s ease forwards;
 }
 
-a:hover::after {
+main a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
   animation: linkUnderline 0.3s ease forwards;
