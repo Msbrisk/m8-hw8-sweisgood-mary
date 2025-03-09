@@ -125,9 +125,6 @@ main a::after {
 
 main a:hover::after {
   width: 100%;
-  transform: scaleX(1);
-  transform-origin: bottom left;
-  animation: linkUnderline 0.3s ease forwards;
 }
 
 /* end article link transitions */
