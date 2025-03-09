@@ -39,12 +39,44 @@ header {
 header a {
   font-size: 1.5rem;
   color: var(--off-white);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header a:hover {
+  color: var(--secondary-color); 
+  transform: scale(1.1);
 }
 /* end header link animations */
 
 /* article link transitions */
 main a {
   color: var(--danger-color);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+main a:hover {
+  color: var(--secondary-color); 
+}
+
+main a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-color);
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+main a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 /* end article link transitions */
 
@@ -100,6 +132,13 @@ section.hero > button {
   border-radius: 12px;
   text-transform: uppercase;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section.hero > button:hover {
+  background-color: var(--primary-color); 
+  transform: translateY(-5px); 
+  box-shadow: 0 4px 10px var(--secondary-color); 
 }
 
 main article {
