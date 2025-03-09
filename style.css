@@ -6,7 +6,9 @@
   --warn-color: #FDD219;
   --danger-color: #FA5456;
   --white: #FFFFFF;
-  --off-whit@keyframes linkUnderline {
+  --off-white;
+  
+  @keyframes linkUnderline {
   0% {
     transform: scaleX(0);
   }
