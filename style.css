@@ -6,7 +6,8 @@
   --warn-color: #FDD219;
   --danger-color: #FA5456;
   --white: #FFFFFF;
-  --off-white;
+  --off-white: #f1f2f4; 
+)
   
   @keyframes linkUnderline {
   0% {
@@ -31,15 +32,6 @@
   100% {
     transform: scale(1.1);
     color: var(--secondary-color);
-  }
-}
-
-@keyframes linkUnderline {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
   }
 }
 
@@ -128,10 +120,9 @@ main a::after {
   background-color: var(--secondary-color);
   bottom: 0;
   left: 0;
-  transform: scaleX(1);
+  transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease;
-  animation: linkUnderline 0.3s ease forwards;
 }
 
 main a:hover::after {
