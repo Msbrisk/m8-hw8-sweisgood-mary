@@ -126,7 +126,7 @@ main a::after {
   background-color: var(--secondary-color);
   bottom: 0;
   left: 0;
-  transform: scaleX(0);
+  transform: scaleX(1);
   transform-origin: bottom right;
   transition: transform 0.3s ease;
 }
