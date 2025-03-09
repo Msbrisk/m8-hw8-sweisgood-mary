@@ -6,8 +6,63 @@
   --warn-color: #FDD219;
   --danger-color: #FA5456;
   --white: #FFFFFF;
-  --off-white: #F1F2F4;
+  --off-whit@keyframes linkUnderline {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}e: #F1F2F4;
   --gray: #A1A1A1;
+}
+
+@keyframes headerLinkHover {
+  0% {
+    transform: scale(1);
+    color: var(--off-white);
+  }
+  50% {
+    transform: scale(1.05);
+    color: var(--secondary-color);
+  }
+  100% {
+    transform: scale(1.1);
+    color: var(--secondary-color);
+  }
+}
+
+@keyframes linkUnderline {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes buttonHoverEffect {
+  0% {
+    transform: translateY(0);
+    background-color: var(--secondary-color);
+  }
+  50% {
+    transform: translateY(-5px);
+    background-color: var(--primary-color);
+  }
+  100% {
+    transform: translateY(0);
+    background-color: var(--secondary-color);
+  }
+}
+
+@keyframes footerFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 body {
@@ -46,7 +101,9 @@ header a {
 header a:hover {
   color: var(--secondary-color); 
   transform: scale(1.1);
+  animation: headerLinkHover 0.5s ease-in-out forwards;
 }
+
 /* end header link animations */
 
 /* article link transitions */
@@ -77,7 +134,9 @@ main a::after {
 main a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+  animation: linkUnderline 0.3s ease forwards;
 }
+
 /* end article link transitions */
 
 main > article, nav{
