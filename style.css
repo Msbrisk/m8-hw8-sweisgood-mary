@@ -7,6 +7,7 @@
   --danger-color: #FA5456;
   --white: #FFFFFF;
   --off-white: #f1f2f4; 
+  --gray: #A1A1A1;
 )
   
   @keyframes linkUnderline {
@@ -16,8 +17,6 @@
   100% {
     transform: scaleX(1);
   }
-}e: #F1F2F4;
-  --gray: #A1A1A1;
 }
 
 @keyframes headerLinkHover {
